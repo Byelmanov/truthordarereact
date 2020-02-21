@@ -1,0 +1,70 @@
+$primaryFont: 'Montserrat', sans-serif
+$orange: #ff5c39
+$blue: #05C3DE
+
+
+
+header
+    .mainLogo
+        margin-top: 40px
+        margin-right: 50px
+        text-align: center
+        img
+            width: 540px
+            height: 300px
+    h1
+        text-transform: uppercase
+        font-weight: 100
+        text-align: center
+        font-size: 60px
+        margin-top: 30px
+    h2
+        text-align: center
+        margin-top: 100px
+        margin-bottom: 50px
+        font-weight: 100
+        font-size: 40px
+    .rules
+        list-style: none
+        width: 70%
+        margin-left: 100px   
+        &__item
+            font-size: 15px
+            margin-top: 20px
+            line-height: 25px
+            position: relative
+            &::before
+                content: ''
+                width: 20px
+                height: 20px
+                border-radius: 40px
+                background-color: $orange
+                position: absolute
+                left: -40px
+                top: 3px
+    .button__header
+        float: right
+        margin: 50px 
+        &:hover
+            box-shadow: 0 0 5px $orange
+        a
+            color: #fff
+            text-decoration: none
+        span
+            font-size: 20px
+    
+.button
+        color: #fff
+        background-color: $orange
+        border-radius: 40px
+        font-size: 15px
+        padding: 5px 15px 10px 15px
+        cursor: pointer
+        &:hover
+            box-shadow: 0 0 5px $orange
+        a
+            color: #fff
+            text-decoration: none
+        span
+            font-size: 20px
+            margin: 5px
