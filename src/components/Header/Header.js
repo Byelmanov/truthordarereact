@@ -5,18 +5,13 @@ import Footer from '../Footer/Footer.js'
 
 import {
     BrowserRouter as Router,
-    Switch,
-    Route,
     Link,
-    Redirect,
-    useHistory,
-    useLocation
 } from "react-router-dom";
 
 
 class Header extends Component {
     handleClick = () => {
-        this.props.history.push('/number')
+        this.props.history.push('/players');
     }
     render() {
         return (
@@ -40,7 +35,7 @@ class Header extends Component {
                                 <li className="rules__item">Выпейте :)</li>
                             </ul>
                             <Router>
-                                <Link className="button__header button" id="headerOkay" onClick={this.handleClick}>
+                                <Link to="/players" className="button__header button" id="headerOkay" onClick={this.handleClick}>
                                     Все понятно <span>&#x27F6;</span>
                                 </Link>
                             </Router>

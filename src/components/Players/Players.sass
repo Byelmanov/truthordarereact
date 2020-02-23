@@ -1,0 +1,112 @@
+$primaryFont: 'Montserrat', sans-serif
+$orange: #ff5c39
+$blue: #05C3DE
+
+.players
+    &__form	
+        &Counter
+            padding-top: 40px
+            text-align: center
+            display: flex
+            justify-content: center
+            .square
+                width: 35px
+                height: 40px
+                box-shadow: 0 3px 3px #C0C0C0
+                border: none
+                line-height: 40px
+                font-size: 20px
+                font-weight: 100
+
+.form__buttons
+    display: flex
+    justify-content: space-between
+    padding: 50px
+    position: relative
+    .button__back
+        background-color: $blue
+        &:hover
+            box-shadow: 0 0 5px $blue
+            color: #fff
+            text-decoration: none
+        span
+            margin-left: 0
+    .button__further
+        &:hover
+            box-shadow: 0 0 5px $orange
+            color: #fff
+            text-decoration: none
+        span
+            margin-right: 0	
+    .button__error
+        width: 150px
+        height: 40px
+        border-radius: 40px
+        box-shadow: 0 0 5px $orange
+        background: #fff
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        margin: auto
+        font-size: 12px
+        line-height: 40px   
+        font-weight: 100
+        text-align: center
+        
+
+.form
+    max-width: 600px
+    width: 100%
+    margin: auto
+    box-shadow: 0 5px 5px #C0C0C0
+    h2
+        background-color: $orange
+        padding: 30px
+        width: 100%
+        text-align: center
+        color: #fff
+        font-size: 20px
+        font-weight: 100
+        text-transform: uppercase
+        margin: 0
+        margin-bottom: 40px
+    .circle
+            display: flex
+            margin-left: 10px
+            flex-direction: column
+            position: relative
+            &__item
+                min-width: 17px
+                height: 17px
+                border-radius: 40px
+                background-color: $orange	
+                margin-bottom: 5px
+                cursor: pointer
+                line-height: 15px
+                color: #fff
+                font-size: 10px	
+                font-weight: 100
+            .message
+                position: absolute
+                border-radius: 40px
+                box-shadow: 0 0 5px $orange
+                font-size: 13px
+                font-weight: 100
+                width: 200px
+                height: 50px
+                padding: 5px
+                padding-top: 8px
+                &__max
+                    top: -30px
+                    bottom: 0
+                    left: 30px
+                    right: 0
+                    
+                &__min
+                    top: 30px
+                    bottom: 0
+                    left: 30px
+                    right: 0
+                    
