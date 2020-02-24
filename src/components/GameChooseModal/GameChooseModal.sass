@@ -1,0 +1,66 @@
+$primaryFont: 'Montserrat', sans-serif
+$orange: #ff5c39
+$blue: #05C3DE
+
+.playArea
+    &__modalChoose
+        position: absolute
+        z-index: 3
+        width: 100%
+        max-width: 600px
+        max-height: 360px
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        margin: auto
+        background: #fff
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
+        display: block
+    &__chooseButtonWrap
+        display: flex
+        flex-flow: row wrap
+        justify-content: space-around
+        align-items: center
+        width: 100%
+        margin-bottom: 50px
+    &__chooseButton
+        width: 40%
+        min-width: 200px
+        height: 85px
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
+        font-family: $primaryFont
+        font-size: 35px
+        line-height: 85px
+        font-weight: 300
+        text-align: center
+        background: #fff
+        cursor: pointer
+        flex: 0 0 40%
+        &:hover
+            color: $orange
+    &__chooseText
+        font-size: 20px
+        font-family: $primaryFont
+        font-weight: 100
+        text-align: center
+        background: $orange
+        padding: 30px
+        width: 100%
+        height: auto
+        color: #fff
+        margin-bottom: 50px
+    &__skipButton
+        width: 120px
+        height: 40px
+        background: $blue
+        color: #fff
+        font-family: $primaryFont
+        font-size: 15px
+        line-height: 40px
+        font-weight: 100
+        text-transform: capitalize
+        text-align: center
+        border-radius: 40px
+        margin: auto
+        cursor: pointer

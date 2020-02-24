@@ -1,0 +1,48 @@
+$primaryFont: 'Montserrat', sans-serif
+$orange: #ff5c39
+$blue: #05C3DE
+
+.playArea
+    &__playButton
+        margin: 15px auto 70px
+        text-align: center
+        width: 250px
+        height: 80px 
+        border-radius: 80px
+        font-weight: 100
+        line-height: 80px
+        font-size: 35px
+        font-family: $primaryFont
+        cursor: pointer
+        text-transform: uppercase
+        background: $orange
+        color: #fff
+        &:hover
+            box-shadow: 0 0 5px $orange
+    &__exitButton
+        width: 110px
+        height: 40px
+        line-height: 40px
+        text-align: center
+        position: absolute
+        outline: none
+        border-radius: 40px
+        font-family: $primaryFont
+        font-weight: 100
+        font-size: 17px
+        right: 30px
+        top: 35px
+        color: #fff
+        cursor: pointer
+        text-transform: capitalize
+        background: $blue
+        &:hover
+            color: #fff
+            text-decoration: none
+            box-shadow: 0 0 5px $blue
+    &__logo
+        position: absolute
+        top: 20px
+        left: 20px
+        width: 200px
+        height: auto

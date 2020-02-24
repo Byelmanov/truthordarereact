@@ -64,8 +64,9 @@ class Names extends Component {
 
         if (error == false) {
             try {
-                let namesFromInput = inputs.forEach(input => input.value);
-                this.props.setPlayersNames(namesFromInput);
+                let inputsArray = Array.from(inputs);
+                let namesFromInput = inputsArray.map(input => input.value);
+                this.props.setNames(namesFromInput);
             } catch (e) {
                 console.log(e);
             }
@@ -77,7 +78,6 @@ class Names extends Component {
     render() {
         return (
             <section className="names">
-                {this.props.numberOfPlayers}
                 <div className="logo">
                     <Link to="/">
                         <img src={logo} alt="logo" />
@@ -90,7 +90,7 @@ class Names extends Component {
 
                     <div className="form__buttons">
                         <Link to="/players" className="button__back button"><span>&#x27F5;</span>Назад</Link>
-                        <Link to="/players" className="button__further button" onClick={this.handleClickFurtherButton}>Далее <span>&#x27F6;</span></Link>
+                        <Link to="/game" className="button__further button" onClick={this.handleClickFurtherButton}>Далее <span>&#x27F6;</span></Link>
                         <Error error={this.state.error} />
                     </div>
                 </div>

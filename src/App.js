@@ -12,6 +12,7 @@ import {
 import Header from './components/Header/Header.js';
 import Players from './components/Players/Players.js';
 import Names from './components/Names/Names.js';
+import Game from './components/Game/Game.js';
 
 
 
@@ -20,7 +21,10 @@ class App extends Component {
 
     state = {
         numberOfPlayers: '2',
-        names: '',
+        names: [
+            "Bohdan",
+            'Anna',
+        ],
     }
 
     setNumberOfPlayers = number => {
@@ -42,12 +46,14 @@ class App extends Component {
 
                 <Switch>
                     <Route exact path="/" component={Header} />
-                    {/* <Route exact path="/players" component={Players} /> */}
                     <Route exact path="/players">
                         <Players setNumberOfPlayers={this.setNumberOfPlayers} />
                     </Route>
                     <Route exact path="/names">
                         <Names numberOfPlayers={this.state.numberOfPlayers} setNames={this.setPlayersNames} />
+                    </Route>
+                    <Route exact path="/game">
+                        <Game names={this.state.names} numberOfPlayers={this.state.numberOfPlayers} />
                     </Route>
                 </Switch>
 
