@@ -4,10 +4,6 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link,
-    Redirect,
-    useHistory,
-    useLocation
 } from "react-router-dom";
 import Header from './components/Header/Header.js';
 import Players from './components/Players/Players.js';
@@ -20,10 +16,16 @@ import Game from './components/Game/Game.js';
 class App extends Component {
 
     state = {
-        numberOfPlayers: '2',
+        numberOfPlayers: '8',
         names: [
-            "Bohdan",
-            'Anna',
+            "1",
+            '2',
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
         ],
     }
 

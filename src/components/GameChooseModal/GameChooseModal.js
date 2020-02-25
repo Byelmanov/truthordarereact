@@ -4,18 +4,20 @@ import './GameChooseModal.sass'
 
 function GameChooseModal(props) {
     if (!props.modal) {
-        return (
-            <div>{props.modal}</div>
-        )
+        return null;
+
     } else {
         function handleSkip() {
             props.setChooseModal(false);
+            props.oneMove(false);
         }
         function handleTruth() {
-            props.setTaskModal('truth');
+            props.setChooseModal(false);
+            props.oneMove('truth');
         }
         function handleDare() {
-            props.setTaskModal('dare');
+            props.setChooseModal(false);
+            props.oneMove('dare');
         }
         return (
             <div className="playArea__modalChoose">

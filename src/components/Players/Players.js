@@ -4,12 +4,11 @@ import logo from '../../img/logo-main.png';
 import Footer from '../Footer/Footer.js'
 
 import {
-    BrowserRouter as Router,
     Link,
 } from "react-router-dom";
 
 function WarnMax(props) {
-    if (props.show == false) {
+    if (props.show === false) {
         return null;
     }
 
@@ -19,7 +18,7 @@ function WarnMax(props) {
 }
 
 function WarnMin(props) {
-    if (props.show == false) {
+    if (props.show === false) {
         return null;
     }
 
@@ -42,7 +41,7 @@ class Players extends Component {
 
     increaseNumberOfPlayers = () => {
         if (this.state.numberOfPayers < 8) {
-            let number = ++(this.state.numberOfPayers);
+            let number = (this.state.numberOfPayers) + 1;
             this.setState({
                 numberOfPayers: number,
             });
@@ -55,7 +54,7 @@ class Players extends Component {
     }
     decreaseNumberOfPlayers = () => {
         if (this.state.numberOfPayers > 2) {
-            let number = --(this.state.numberOfPayers);
+            let number = (this.state.numberOfPayers) - 1;
             this.setState({
                 numberOfPayers: number,
             });

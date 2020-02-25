@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Circle.sass'
 import CircleNames from '../CircleNames/CircleNames.js'
 
 function Circle(props) {
     let numberOfPlayers = props.number;
-    let arrayOfLines = new Array();
+    let arrayOfLines = [];
     for (let i = 0, x = 0; i < numberOfPlayers; i++ , x += 360 / numberOfPlayers) {
         let styleForLine = {
             transform: "rotate(" + x + "deg)",

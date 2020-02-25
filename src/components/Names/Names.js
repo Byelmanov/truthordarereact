@@ -3,13 +3,7 @@ import './Names.sass';
 import logo from '../../img/logo-main.png';
 import Footer from '../Footer/Footer.js';
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
     Link,
-    Redirect,
-    useHistory,
-    useLocation
 } from "react-router-dom";
 
 function NameItems(props) {
@@ -52,7 +46,7 @@ class Names extends Component {
         let inputs = document.querySelectorAll('.names__input');
         let error = false;
         inputs.forEach(input => {
-            if (input.value == "" || input.value == null || input.value == undefined) {
+            if (input.value === "" || input.value === null || input.value === undefined) {
                 e.preventDefault();
                 this.setState({
                     error: true,
@@ -62,7 +56,7 @@ class Names extends Component {
             }
         });
 
-        if (error == false) {
+        if (error === false) {
             try {
                 let inputsArray = Array.from(inputs);
                 let namesFromInput = inputsArray.map(input => input.value);
