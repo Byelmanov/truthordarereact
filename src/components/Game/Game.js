@@ -94,10 +94,10 @@ class Game extends Component {
                 showChooseModal: true
             });
             return new Promise((resolve) => {
-                setTimeout(() => resolve(), 2000);
+                setTimeout(() => resolve(), 1500);
             });
         }).then(() => {
-            $("#arrow").rotate(-spinTo);
+            $("#arrow").rotate(-(spinTo - 1080));
         });
     }
 

@@ -30,3 +30,24 @@ $blue: #05C3DE
                 font-size: 17px
                 font-weight: 100
                 overflow: hidden
+
+@media all and (max-width: 600px)
+    .names
+        &__field
+            &Item
+                .circle__item
+                    margin-left: 15px
+                    margin-right: 15px
+
+@media all and (max-width: 500px)
+	.names
+		&__field
+			&Item
+				input
+					width: 300px
+@media all and (max-width: 350px)
+	.names
+		&__field
+			&Item
+				input
+					width: 250px

@@ -46,3 +46,48 @@ $blue: #05C3DE
         left: 20px
         width: 200px
         height: auto
+
+@media all and (max-width: 735px)
+    .playArea
+        padding-top: 100px
+        &__logo
+            top: 10px
+
+@media all and (max-width: 620px)
+    .playArea
+        overflow: hidden
+        padding-top: 150px
+        &__logo
+            width: 130px
+            top: 10px
+        &__playButton
+            position: absolute
+            bottom: 0
+            right: 0
+            left: 0
+
+@media all and (max-width: 450px)
+    .playArea
+        position: relative
+        min-height: calc(100vh - 80px)
+        padding-top: 160px
+        overflow: hidden
+        &__playButton
+            width: 200px
+            position: absolute
+            bottom: 0
+            font-weight: 300
+            font-size: 25px
+            left: 0
+            right: 0
+            margin: 0 auto
+        &__logo
+            width: 130px
+            top: 10px
+@media all and (max-width: 414px)
+	.playArea
+		&__playButton
+			bottom: 0
+@media all and (max-width: 375px)
+	.playArea
+		min-height: calc(100vh - 40px)

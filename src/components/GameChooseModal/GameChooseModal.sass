@@ -65,3 +65,21 @@ $blue: #05C3DE
         border-radius: 40px
         margin: auto
         cursor: pointer
+
+@media all and (max-width: 450px)
+    .playArea
+        &__modalChoose
+            max-height: 490px
+        &__chooseButtonWrap
+            flex-flow: column wrap
+        &__chooseButton
+            &:first-child
+                margin-bottom: 50px
+
+@media all and (max-width: 400px)
+    .playArea
+        &__modalChoose
+            max-height: 440px
+        &__chooseButton
+            &:first-child
+                margin-bottom: 20px
