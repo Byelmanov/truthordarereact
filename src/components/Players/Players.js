@@ -29,21 +29,21 @@ function WarnMin(props) {
 
 class Players extends Component {
     state = {
-        numberOfPayers: 2,
+        numberOfPlayers: this.props.numberOfPlayers,
         warnMax: false,
         warnMin: false,
     }
 
     handleClickFurtherButton = () => {
-        let number = this.state.numberOfPayers;
+        let number = this.state.numberOfPlayers;
         this.props.setNumberOfPlayers(number);
     }
 
     increaseNumberOfPlayers = () => {
-        if (this.state.numberOfPayers < 8) {
-            let number = (this.state.numberOfPayers) + 1;
+        if (this.state.numberOfPlayers < 8) {
+            let number = parseInt(this.state.numberOfPlayers) + 1;
             this.setState({
-                numberOfPayers: number,
+                numberOfPlayers: number,
             });
         } else {
             this.setState({
@@ -53,10 +53,10 @@ class Players extends Component {
         }
     }
     decreaseNumberOfPlayers = () => {
-        if (this.state.numberOfPayers > 2) {
-            let number = (this.state.numberOfPayers) - 1;
+        if (this.state.numberOfPlayers > 2) {
+            let number = parseInt(this.state.numberOfPlayers) - 1;
             this.setState({
-                numberOfPayers: number,
+                numberOfPlayers: number,
             });
         } else {
             this.setState({
@@ -77,7 +77,7 @@ class Players extends Component {
                 <div className="playersForm form">
                     <h2>Выберите количество игроков</h2>
                     <div className="players__formCounter">
-                        <div className="square">{this.state.numberOfPayers}</div>
+                        <div className="square">{this.state.numberOfPlayers}</div>
                         <div className="circle">
                             <div className="circle__item" onClick={this.increaseNumberOfPlayers}>&and;</div>
                             <div className="circle__item" onClick={this.decreaseNumberOfPlayers}>&or;</div>

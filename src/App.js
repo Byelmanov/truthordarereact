@@ -16,17 +16,8 @@ import Game from './components/Game/Game.js';
 class App extends Component {
 
     state = {
-        numberOfPlayers: '8',
-        names: [
-            "1",
-            '2',
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-        ],
+        numberOfPlayers: '2',
+        names: [],
     }
 
     setNumberOfPlayers = number => {
@@ -49,7 +40,7 @@ class App extends Component {
                 <Switch>
                     <Route exact path="/" component={Header} />
                     <Route exact path="/players">
-                        <Players setNumberOfPlayers={this.setNumberOfPlayers} />
+                        <Players setNumberOfPlayers={this.setNumberOfPlayers} numberOfPlayers={this.state.numberOfPlayers} />
                     </Route>
                     <Route exact path="/names">
                         <Names numberOfPlayers={this.state.numberOfPlayers} setNames={this.setPlayersNames} />
