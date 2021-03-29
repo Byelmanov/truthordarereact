@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/truthOrDareReact/static/css/main.b658092d.chunk.css",
-    "main.js": "/truthOrDareReact/static/js/main.fe7fbc69.chunk.js",
-    "main.js.map": "/truthOrDareReact/static/js/main.fe7fbc69.chunk.js.map",
+    "main.js": "/truthOrDareReact/static/js/main.27a80841.chunk.js",
+    "main.js.map": "/truthOrDareReact/static/js/main.27a80841.chunk.js.map",
     "runtime-main.js": "/truthOrDareReact/static/js/runtime-main.7eb7695c.js",
     "runtime-main.js.map": "/truthOrDareReact/static/js/runtime-main.7eb7695c.js.map",
     "static/css/2.67123b20.chunk.css": "/truthOrDareReact/static/css/2.67123b20.chunk.css",
     "static/js/2.1fc5b171.chunk.js": "/truthOrDareReact/static/js/2.1fc5b171.chunk.js",
     "static/js/2.1fc5b171.chunk.js.map": "/truthOrDareReact/static/js/2.1fc5b171.chunk.js.map",
     "index.html": "/truthOrDareReact/index.html",
-    "precache-manifest.6e476d5bb6ba81370fddc7dd53b5b15c.js": "/truthOrDareReact/precache-manifest.6e476d5bb6ba81370fddc7dd53b5b15c.js",
+    "precache-manifest.a2d6b6b8455e56cbaa196d49cbe822ec.js": "/truthOrDareReact/precache-manifest.a2d6b6b8455e56cbaa196d49cbe822ec.js",
     "service-worker.js": "/truthOrDareReact/service-worker.js",
     "static/css/2.67123b20.chunk.css.map": "/truthOrDareReact/static/css/2.67123b20.chunk.css.map",
     "static/css/main.b658092d.chunk.css.map": "/truthOrDareReact/static/css/main.b658092d.chunk.css.map",
@@ -22,6 +22,6 @@
     "static/css/2.67123b20.chunk.css",
     "static/js/2.1fc5b171.chunk.js",
     "static/css/main.b658092d.chunk.css",
-    "static/js/main.fe7fbc69.chunk.js"
+    "static/js/main.27a80841.chunk.js"
   ]
 }
