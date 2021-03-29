@@ -38,14 +38,14 @@ class App extends Component {
             <Router>
 
                 <Switch>
-                    <Route exact path="/" component={Header} />
-                    <Route exact path="/players">
+                    <Route exact path="https://Byelmanov.github.io/truthOrDareReact/" component={Header} />
+                    <Route exact path="https://Byelmanov.github.io/truthOrDareReact/players">
                         <Players setNumberOfPlayers={this.setNumberOfPlayers} numberOfPlayers={this.state.numberOfPlayers} />
                     </Route>
-                    <Route exact path="/names">
+                    <Route exact path="https://Byelmanov.github.io/truthOrDareReact/names">
                         <Names numberOfPlayers={this.state.numberOfPlayers} setNames={this.setPlayersNames} />
                     </Route>
-                    <Route exact path="/game">
+                    <Route exact path="https://Byelmanov.github.io/truthOrDareReact/game">
                         <Game names={this.state.names} numberOfPlayers={this.state.numberOfPlayers} />
                     </Route>
                 </Switch>
