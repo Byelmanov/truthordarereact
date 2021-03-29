@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/truthOrDareReact/precache-manifest.fc21036cfde01d56e9db135ba19409f1.js"
+  "/truthOrDareReact/precache-manifest.59788bc2bdcd21f9284f4e92c3b5168a.js"
 );
 
 self.addEventListener('message', (event) => {

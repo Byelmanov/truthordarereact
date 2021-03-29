@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f92903588db85848db64b24af46780f6",
+    "revision": "85a523770fe7dead81fa0ca37ffa31ba",
     "url": "/truthOrDareReact/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/truthOrDareReact/static/css/2.67123b20.chunk.css"
   },
   {
-    "revision": "96daa655f36dec9868f7",
+    "revision": "748400e3c274dc054772",
     "url": "/truthOrDareReact/static/css/main.b658092d.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/truthOrDareReact/static/js/2.1fc5b171.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "96daa655f36dec9868f7",
-    "url": "/truthOrDareReact/static/js/main.6325a6ef.chunk.js"
+    "revision": "748400e3c274dc054772",
+    "url": "/truthOrDareReact/static/js/main.3309308e.chunk.js"
   },
   {
     "revision": "3d023c55ee52b844d6b6",
